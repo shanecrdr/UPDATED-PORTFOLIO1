@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shane Cordero | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page">
+
+    <!-- BACKGROUND GALAXY GLOW EFFECTS -->
+    <div class="glow-bg glow-purple"></div>
+    <div class="glow-bg glow-cyan"></div>
+    <div class="glow-bg glow-pink"></div>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav-container">
+            <!-- MALINIS NA LOGO FORMAT -->
+            <a href="index.html" class="logo-link">
+                <img src="img/SC_Logo.png" alt="Shane Cordero Logo" class="logo-img">
+            </a>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <!-- 5 NAVIGATION LINKS -->
+            <nav class="nav-links">
+                <a href="index.html" class="nav-item active">Home</a>
+                <a href="about.html" class="nav-item">About</a>
+                <a href="project.html" class="nav-item">Projects</a>
+                <a href="resume.html" class="nav-item">Resume</a>
+                <a href="contact.html" class="nav-item">Contact</a>
+            </nav>
+
+            <!-- VISIBLE SOCIAL ICONS -->
+            <div class="social-side">
+                <a href="https://www.facebook.com/share/1DbCYUpWRG/" target="_blank" title="Facebook"><img src="img/fb.png" alt="Facebook"></a>
+                <a href="https://www.tiktok.com/@shncrdr" target="_blank" title="TikTok"><img src="img/tiktok.png" alt="TikTok"></a>
+                <a href="https://wa.me/639263612356" target="_blank" title="WhatsApp"><img src="img/whatsapp.png" alt="WhatsApp"></a>
+                <a href="mailto:shanecrdr07@gmail.com" title="Email"><img src="img/email.png" alt="Email"></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO MAIN SECTION -->
+    <main class="hero-section">
+        <h1 class="main-title">SHANE CORDERO</h1>
+
+        <div class="main-card">
+            <div class="text-content">
+                <p class="intro-text">
+                    Hello, and welcome to my portfolio! I am a Web Developer who specializes in front-end and UI/UX design. My main focus is building websites that are clear, easy to use, and visually appealing. This portfolio highlights my skills and projects, giving employers and recruiters simple navigation to explore my work. I believe that good design should make technology feel natural and effortless. I pay close attention to details that improve usability and overall satisfaction.
+                </p>
+                
+                <!-- BUTTON GROUP: PAREHO NA ANG KULAY AT HINDI MASAKIT SA MATA -->
+                <div class="btn-group">
+                    <a href="img/resume.pdf" download="Shane_Cordero_Resume.pdf" class="btn btn-theme">Download Resume</a>
+                    <a href="portfolio.html" class="btn btn-theme">View Portfolio</a>
+                </div>
+            </div>
+
+            <!-- PROFILE PHOTO (PINA-TAMA ANG SIZE AT FORMAT) -->
+            <div class="image-area">
+                <div class="photo-card-glow">
+                    <img src="img/pic1.png" alt="Shane Cordero" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- EXTRA CONTENT GRID -->
+    <section class="extra-content">
+        <div class="info-card">
+            <h3>My Growth Journey</h3>
+            <p><strong>2024:</strong> Started my web development journey with HTML and CSS basics.</p>
+            <p><strong>2025:</strong> Mastered JavaScript and improved my responsive design skills.</p>
+            <p><strong>2026:</strong> Focused on advanced UI/UX principles and modern frontend frameworks.</p>
+        </div>
+
+       <div class="info-card">
+            <h3>Design Insights</h3>
+            <p class="quote">"True simplicity isn't about just removing elements; it's about making complex functionality feel effortless and natural for the user."</p>
+            <p class="extra-quote-text">"Every line of code and visual detail should serve a purpose, creating a seamless experience that feels intuitive from the very first click."</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Current Status</h3>
+            <p>🎧 <strong>Currently listening to:</strong> Lo-fi beats for coding sessions.</p>
+            <p>🚀 <strong>Currently exploring:</strong> Advanced CSS Animations and interaction design.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER WITH VISIBLE LINKS -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© All Rights Reserved. Created by Cordero Shane C.</p>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/shane-cordero-411080373" target="_blank" class="footer-link">
+                    <img src="img/linkdin.png" alt="LinkedIn">
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/shanecrdr" target="_blank" class="footer-link">
+                    <img src="img/github.png" alt="GitHub">
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        menu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>

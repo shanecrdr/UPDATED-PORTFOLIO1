@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Shane Cordero</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page">
+
+    <!-- BACKGROUND GALAXY GLOW EFFECTS -->
+    <div class="glow-bg glow-purple"></div>
+    <div class="glow-bg glow-cyan"></div>
+    <div class="glow-bg glow-pink"></div>
+
+   
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="img/SC_Logo.png" alt="Shane Cordero Logo" class="logo-img">
+            </a>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <!-- NAVIGATION LINKS -->
+            <nav class="nav-links">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="about.html" class="nav-item">About</a>
+                <a href="project.html" class="nav-item">Projects</a>
+                <a href="resume.html" class="nav-item">Resume</a>
+                <a href="contact.html" class="nav-item active">Contact</a>
+            </nav>
+
+            <!-- SOCIAL ICONS -->
+            <div class="social-side">
+                <a href="https://www.facebook.com/share/1DbCYUpWRG/" target="_blank" title="Facebook"><img src="img/fb.png" alt="Facebook"></a>
+                <a href="https://www.tiktok.com/@shncrdr" target="_blank" title="TikTok"><img src="img/tiktok.png" alt="TikTok"></a>
+                <a href="https://wa.me/639263612356" target="_blank" title="WhatsApp"><img src="img/whatsapp.png" alt="WhatsApp"></a>
+                <a href="mailto:shanecrdr07@gmail.com" title="Email"><img src="img/email.png" alt="Email"></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTACT SECTION -->
+    <main class="hero-section">
+        <h1 class="main-title">GET IN TOUCH</h1>
+
+        <div class="contact-wrapper">
+            <div class="form-window about-info-card">
+                <div class="window-content">
+                    <div class="input-box">
+                        <label>Name:</label>
+                        <input type="text" placeholder="Enter your full name">
+                    </div>
+                    <div class="input-box">
+                        <label>E-Mail:</label>
+                        <input type="email" placeholder="Enter your e-mail id">
+                    </div>
+                    <div class="input-box">
+                        <label>Message:</label>
+                        <textarea placeholder="Enter your message"></textarea>
+                    </div>
+                    <button class="send-button">Send</button>
+                </div>
+            </div>
+
+            <div class="contact-sidebar about-info-card">
+                <div class="sidebar-item">
+                    <img src="img/fb.png" alt="FB" class="social-icon">
+                    <span>Shane Cordero</span>
+                </div>
+                <div class="sidebar-item">
+                    <img src="img/email.png" alt="E-Mail" class="social-icon">
+                    <span>shanecrdr07@gmail.com</span>
+                </div>
+                <div class="sidebar-item">
+                    <img src="img/tiktok.png" alt="TikTok" class="social-icon">
+                    <span>@shncrdr</span>
+                </div>
+                <div class="sidebar-item">
+                    <img src="img/whatsapp.png" alt="WhatsApp" class="social-icon">
+                    <span>+639263612356</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© All Rights Reserved. Created by Cordero Shane C.</p>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/shane-cordero-411080373" target="_blank" class="footer-link">
+                    <img src="img/linkdin.png" alt="LinkedIn">
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/shanecrdr" target="_blank" class="footer-link">
+                    <img src="img/github.png" alt="GitHub">
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE SCRIPTS -->
+    <script>
+        const menu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        menu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
